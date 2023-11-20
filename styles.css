@@ -180,17 +180,23 @@ header iframe {
 
 /* CHARACTERS */
 
+.char-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+}
+
 .char-container {
   background-color: #fff;
   position: relative;
-  min-width: 30em;
+  /* min-width: 30em; */
   width: 95vmin;
-  top: 75px;
   text-align: left;
   display: grid;
   grid-template-columns: 2fr 9fr;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
-  margin: 0 auto;
   border: 2px solid #fff;
   border-radius: 8px;
 }
@@ -579,10 +585,9 @@ footer {
 
   .char-container {
     max-width: 90vw;
-
-    margin: 0 auto;
     min-width: 30vw;
   }
+
   #mario-image {
     right: 100px;
     top: 0;
@@ -654,12 +659,6 @@ footer {
   }
   .game-card img {
     width: 70%;
-  }
-}
-
-@media (max-width: 620px) {
-  .char-container {
-    max-width: 70vw;
   }
 }
 
@@ -786,7 +785,7 @@ footer {
 @media (max-width: 410px) {
   .char-container {
     position: relative;
-    right: 50px;
+    right: 30px;
   }
 
   .game-card img {
