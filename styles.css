@@ -1,0 +1,797 @@
+/* RESET STYLES */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ANIMATIONS */
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0px);
+  }
+}
+
+@keyframes h1-fade {
+  0% {
+    opacity: 0;
+    transform: translateY(15px) translateX(130px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0) translateX(130px);
+  }
+}
+
+/* GLOBAL STYLES */
+
+:root {
+  --mario-red: #e60013;
+  --mario-blue: rgb(29, 29, 161);
+  --luigi-green: #41a732;
+  --peach-pink: #f6b1d0;
+  --daisy-orange: #ffe476;
+  --toad-blue: #213bff;
+  --yoshi-green: #6fd251;
+  --waluigi-purple: #540674;
+  --rosalina-blue: #89e0d5;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  background-color: var(--mario-red);
+}
+
+section {
+  padding: 100px 50px 300px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 3rem;
+  font-family: "Poppins";
+  margin-bottom: 30px;
+}
+
+h1 {
+  font-family: "Poppins";
+}
+
+p {
+  color: #fff;
+}
+
+/* NAV BAR */
+
+nav {
+  background-color: var(--mario-blue);
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav img {
+  max-width: 80px;
+  height: auto;
+}
+
+nav h1 {
+  font-size: 2.5rem;
+  color: #fff;
+  flex-grow: 1;
+  max-width: 40%;
+  text-align: right;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav li {
+  margin: 0 10px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+  font-family: "Lato", sans-serif;
+  font-weight: bold;
+  transition: color 0.2s;
+}
+
+nav a:hover {
+  color: #ccc;
+}
+
+.menu-icon {
+  display: none;
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+
+/* VIDEO HEADER */
+
+header {
+  position: relative;
+  height: 70vh;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.4);
+  width: 80vw;
+  margin: 100px auto 0;
+  border: 2px solid var(--mario-blue);
+  border-radius: 10px;
+  animation: fade-in 0.5s 0.1s backwards;
+  top: 20px;
+  padding-bottom: 100px;
+}
+
+header iframe {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#explore-button {
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  font-size: 24px;
+  padding: 14px 50px;
+  border: 2px solid #fff;
+  border-radius: 50px;
+  cursor: pointer;
+  z-index: 1;
+  transition: background-color 0.3s;
+  text-decoration: none;
+}
+
+#explore-button i {
+  font-size: 80%;
+  transition: transform 0.2s ease;
+}
+
+#explore-button:hover i {
+  transform: translateX(5px);
+}
+
+#explore-button:hover {
+  background-color: rgba(220, 212, 212, 0.8);
+  color: #1e1a36;
+}
+
+/* CHARACTERS */
+
+.char-container {
+  background-color: #fff;
+  position: relative;
+  min-width: 30em;
+  width: 95vmin;
+  top: 75px;
+  text-align: left;
+  display: grid;
+  grid-template-columns: 2fr 9fr;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+  margin: 0 auto;
+  border: 2px solid #fff;
+  border-radius: 8px;
+}
+
+.char-container * {
+  color: rgb(21, 21, 24);
+  font-family: "Poppins";
+}
+
+.char-container p {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.tabs {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: #e4e9fd;
+}
+
+.tabs h3 {
+  height: 33.33%;
+  display: grid;
+  place-items: center;
+  font-size: 1.2em;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.tab-content {
+  background: url("https://i.pinimg.com/originals/28/fe/f9/28fef9ece742153ea400bcae2f1f9d90.jpg");
+  background-color: rgba(210, 210, 223, 0.3);
+  background-blend-mode: multiply;
+  padding: 1em 1.5em;
+}
+
+.tab-content h4 {
+  font-size: 2.5em;
+  margin-bottom: 0.5em;
+  font-weight: 600;
+}
+
+.tab-content h4::after {
+  content: "";
+  height: 3px;
+  width: 100px;
+  display: block;
+  background: rgb(29, 29, 161);
+}
+
+.tab-content p {
+  text-align: justify;
+  line-height: 1.9;
+  letter-spacing: 0.4px;
+  color: rgb(29, 29, 161);
+  font-family: "Catamaran";
+  margin-top: 15px;
+  font-weight: 800;
+}
+
+.tab-content img {
+  height: 210px;
+  width: auto;
+  display: block;
+  margin-top: 20px;
+}
+
+.tab-content div {
+  display: none;
+}
+
+.tab-content .active {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.tab-content .active h4 {
+  grid-column: span 2;
+}
+
+.tab-content .active aside {
+  max-width: 300px;
+}
+
+.tabs .active {
+  background-color: #fff;
+}
+
+.red {
+  color: var(--mario-red);
+}
+
+.luigi-green {
+  color: var(--luigi-green);
+}
+
+.peach-pink {
+  color: var(--peach-pink);
+}
+
+.daisy-orange {
+  color: var(--daisy-orange);
+}
+
+.toad-blue {
+  color: var(--toad-blue);
+}
+
+.yoshi-green {
+  color: var(--yoshi-green);
+}
+
+.waluigi-purple {
+  color: var(--waluigi-purple);
+}
+
+.rosalina-blue {
+  color: var(--rosalina-blue);
+}
+
+/* CARDS */
+
+.card {
+  padding: 30px;
+  border-radius: 10px;
+  background-image: url("https://i.pinimg.com/originals/28/fe/f9/28fef9ece742153ea400bcae2f1f9d90.jpg");
+  background-blend-mode: multiply;
+  background-color: rgb(204, 212, 218);
+}
+
+.card img {
+  max-height: 200px;
+  width: auto;
+  margin-bottom: 10px;
+}
+
+.card h3 {
+  font-size: 2rem;
+  font-family: "Catamaran", sans-serif;
+  padding-bottom: 20px;
+}
+
+.card p {
+  color: rgb(59, 39, 236);
+  font-weight: 600;
+  margin-bottom: 10px;
+  font-family: "Playpen Sans", cursive;
+}
+
+.card p:first-of-type {
+  border-top: 2px solid #e60013;
+  padding-top: 10px;
+}
+
+/* CARD MODIFIERS */
+
+.large {
+  height: 500px;
+}
+
+.medium {
+  height: 475px;
+}
+
+.hash-pattern {
+  background-image: repeating-linear-gradient(
+    -45deg,
+    #302f2f,
+    #302f2f 6px,
+    #2a2929 0,
+    #2a2929 12px
+  );
+}
+
+/* POWER UPS */
+
+.swiper-wrapper {
+  padding-bottom: 10px;
+}
+
+.power-swiper {
+  max-width: 600px;
+  height: 700px;
+}
+
+.power-swiper img {
+  max-width: 400px;
+}
+
+#power-ups {
+  background-image: url("https://mario.nintendo.com/static/pattern-logos-characters-bd1f26898b2027c98ce8ba17c084f523.png");
+  background-blend-mode: multiply;
+  background-color: #82212a;
+  background-position: right;
+}
+
+/* ENEMIES */
+
+.enemy-swiper {
+  max-width: 600px;
+  height: auto;
+}
+
+.enemy-swiper img {
+  max-width: 400px;
+}
+
+#enemies {
+  background-image: url("https://mario.nintendo.com/static/pattern-logos-characters-bd1f26898b2027c98ce8ba17c084f523.png");
+  background-color: rgb(5, 255, 151);
+}
+
+.btn {
+  border: 2px solid white;
+  border-radius: 10px;
+  padding: 10px;
+  width: 200px;
+  margin: 10px auto;
+}
+
+.btn span {
+  font-family: "Catamaran";
+  font-size: 20px;
+}
+
+.enemy-container {
+  display: flex;
+}
+
+/* GAMES */
+
+#mario-background {
+  transform: scale(0);
+  opacity: 0;
+  transition: transform 0.4s ease, opacity 0.5s ease;
+  background: linear-gradient(0deg, #00bc2c, #23b2ff);
+  overflow: hidden;
+  z-index: -1;
+}
+
+#mario-background h2 {
+  position: relative;
+  right: 400px;
+  top: 50px;
+}
+
+.game-grid {
+  position: absolute;
+  top: -100px;
+  left: 0px;
+  left: -200px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  z-index: 1;
+}
+
+.game-card {
+  padding: 30px;
+  border: 2px solid white;
+  border-radius: 10px;
+  height: 300px;
+  width: 300px;
+}
+
+.game-card img {
+  width: 250px;
+  height: auto;
+}
+
+.game-text {
+  text-align: left;
+}
+
+.game-text h3 {
+  padding: 10px 0;
+}
+
+.mario-container {
+  position: relative;
+  left: 200px;
+  padding-bottom: 300px;
+  top: 200px;
+}
+
+/* SEPARATORS */
+
+.separator {
+  width: 0;
+  height: 0;
+  border-left: 100vw solid transparent;
+  margin-top: -13.9vw;
+  z-index: 1;
+}
+
+.mario-red {
+  border-bottom: 13.9vw solid var(--mario-red);
+}
+
+.aqua-mint {
+  border-bottom: 13.9vw solid rgb(5, 255, 151);
+}
+
+.blue-grad {
+  border-bottom: 13.9vw solid #23b2ff;
+}
+
+.maroon {
+  border-bottom: 13.9vw solid #82212a;
+}
+
+/* FOOTER */
+
+.extender {
+  background-color: #e60013;
+  height: 100px;
+}
+
+footer {
+  background-color: rgb(29, 29, 161);
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.socials {
+  margin-bottom: 40px;
+}
+
+.socials p {
+  margin-bottom: 20px;
+}
+
+.fa-brands {
+  padding: 10px;
+  font-size: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.fa-square-facebook {
+  background: #3b5998;
+}
+
+.fa-square-instagram {
+  background: #125688;
+  color: white;
+}
+
+.fa-square-twitter {
+  background: #55acee;
+  color: white;
+}
+
+.fa-square-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+@media (max-width: 1341px) {
+  #mario-background h2 {
+    text-align: center;
+    right: 0;
+  }
+}
+
+@media (max-width: 1150px) {
+  #mario-image {
+    position: relative;
+    right: 150px;
+    max-width: 1000px;
+    height: auto;
+  }
+}
+
+@media (max-width: 900px) {
+  #characters {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .char-container {
+    max-width: 90vw;
+
+    margin: 0 auto;
+    min-width: 30vw;
+  }
+  #mario-image {
+    right: 100px;
+    top: 0;
+    max-width: 800px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  nav h1 {
+    max-width: 100%;
+    text-align: center;
+  }
+  nav ul {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 110px;
+    left: 0;
+    width: 100%;
+    background-color: blue;
+    align-items: center;
+    z-index: 1;
+  }
+
+  nav ul.show {
+    display: flex;
+  }
+
+  nav li {
+    margin: 10px;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+}
+
+@media (max-width: 763px) {
+  .large {
+    height: 600px;
+  }
+
+  .medium {
+    height: 700px;
+  }
+  #mario-image {
+    right: 200px;
+    top: 100px;
+    max-width: 800px;
+  }
+}
+
+@media (max-width: 672px) {
+  .game-grid {
+    grid-template-columns: repeat(2, 300px);
+    gap: 0;
+  }
+  .game-card {
+    width: 70%;
+  }
+  .game-card img {
+    width: 70%;
+  }
+}
+
+@media (max-width: 620px) {
+  .char-container {
+    max-width: 70vw;
+  }
+}
+
+@media (max-width: 565px) {
+  .game-grid {
+    position: relative;
+
+    left: 0px;
+
+    display: flex;
+    flex-direction: column;
+    top: 100px;
+
+    align-items: center;
+    row-gap: 30px;
+  }
+  .mario-container {
+    position: relative;
+    left: 0px;
+    top: 0px;
+    padding-bottom: 0;
+  }
+  #mario-image {
+    display: none;
+  }
+  .game-card {
+    width: 100%;
+  }
+  .game-card img {
+    width: 300px;
+  }
+}
+
+@media screen and (max-width: 485px) {
+  header {
+    position: relative;
+    right: 20px;
+  }
+
+  nav h1 {
+    font-size: 1.7rem;
+  }
+
+  nav ul {
+    top: 80px;
+  }
+
+  nav img {
+    max-width: 60px;
+    padding: 10px;
+  }
+  */ #explore-button {
+    font-size: 10px;
+    padding: 10px 10px;
+    position: absolute;
+    bottom: 100px;
+  }
+
+  #characters h2 {
+    position: relative;
+    right: 25px;
+  }
+
+  .tab-content h4 {
+    font-size: 1.5rem;
+  }
+
+  .tab-content img {
+    margin-top: 0;
+    height: 10vh;
+  }
+
+  .tab-content {
+    max-width: 100vw;
+  }
+
+  .tab-content .active {
+    display: grid;
+    grid-template-columns: 100px;
+  }
+
+  .card {
+    height: 100%;
+    width: 100%;
+  }
+
+  .card h3 {
+    font-size: 2rem;
+  }
+
+  .card img {
+    height: 25%;
+  }
+
+  #mario-image {
+    display: none;
+  }
+
+  #mario-background h2 {
+    position: relative;
+    right: 0;
+    top: 0;
+    padding-bottom: 50px;
+  }
+
+  .mario-container {
+    position: relative;
+    left: 0px;
+    top: 0px;
+    padding-bottom: 0;
+  }
+
+  .game-grid {
+    position: relative;
+    left: 0px;
+    display: flex;
+    flex-direction: column;
+    top: 100px;
+
+    align-items: center;
+  }
+
+  html,
+  body {
+    overflow-x: hidden;
+  }
+}
+
+@media (max-width: 450px) {
+  .game-card img {
+    width: 200px;
+  }
+}
+
+@media (max-width: 410px) {
+  .char-container {
+    position: relative;
+    right: 50px;
+  }
+
+  .game-card img {
+    width: 150px;
+  }
+}

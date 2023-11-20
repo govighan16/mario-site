@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      href="https://i.pinimg.com/originals/37/d7/c7/37d7c72b1706bbba1a388b82c2d611bb.png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Catamaran&family=Lato&family=Playpen+Sans&family=Poppins:wght@500&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <title>The Mario Site</title>
+  </head>
+  <body>
+    <nav>
+      <img src="./assets/header/mario-logo.png" />
+      <h1>The Mario Site</h1>
+      <i class="fa-solid fa-bars menu-icon"></i>
+      <ul class="nav-links">
+        <li><a href="#characters">Characters</a></li>
+        <li><a href="#power-ups">Power-ups</a></li>
+        <li><a href="#enemies">Enemies</a></li>
+        <li><a href="#mario-background">Games</a></li>
+      </ul>
+    </nav>
+
+    <header>
+      <div id="video-container"></div>
+      <button id="explore-button" style="display: none">
+        Explore <i class="fa-solid fa-chevron-right"></i>
+      </button>
+    </header>
+
+    <section id="characters">
+      <h2>Characters</h2>
+      <div class="char-container">
+        <div class="tabs">
+          <h3 class="active red">Mario</h3>
+          <h3 class="luigi-green">Luigi</h3>
+          <h3 class="peach-pink">Peach</h3>
+          <h3 class="daisy-orange">Daisy</h3>
+          <h3 class="toad-blue">Toad</h3>
+          <h3 class="yoshi-green">Yoshi</h3>
+          <h3 class="waluigi-purple">Waluigi</h3>
+          <h3 class="rosalina-blue">Rosalina</h3>
+        </div>
+        <div class="tab-content">
+          <div class="active">
+            <h4 class="red">Meet Mario!</h4>
+            <img src="assets/characters/mario-3d.png" />
+            <aside>
+              <p>
+                Mario, the iconic character of the Super Mario series, is a
+                heroic plumber on a mission to rescue Princess Peach from the
+                clutches of Bowser.
+              </p>
+              <p>
+                With his signature red cap, mustache, and overalls, Mario is
+                recognized worldwide as a brave symbol.
+              </p>
+              <p>
+                He embarks on countless adventures, navigating through
+                challenging levels and collecting power-ups like Super Mushrooms
+                and Fire Flowers.
+              </p>
+            </aside>
+          </div>
+          <div>
+            <h4 class="luigi-green">Meet Luigi!</h4>
+            <img src="assets/characters/luigi-3d.png" />
+            <aside>
+              <p>
+                Luigi, Mario's younger brother, is a green-clad hero known for
+                his tall and slender stature.
+              </p>
+              <p>
+                Often seen as the underdog, Luigi has proven his courage on
+                numerous occasions, helping Mario save the day.
+              </p>
+              <p>
+                With his Poltergust vacuum and excellent jumping abilities,
+                Luigi is an essential part of the Super Mario team.
+              </p>
+            </aside>
+          </div>
+          <div>
+            <h4 class="peach-pink">Meet Peach!</h4>
+            <img src="assets/characters/peach-3d.png" />
+            <aside>
+              <p>
+                Princess Peach, the ruler of the Mushroom Kingdom, is a regal
+                and gracious leader.
+              </p>
+              <p>
+                She is recognized for her iconic pink dress and her recurring
+                role as the damsel in distress, often kidnapped by Bowser.
+              </p>
+              <p>
+                However, Peach is more than just a princess; she's a skilled
+                athlete and a playable character in various sports and racing
+                games.
+              </p>
+            </aside>
+          </div>
+          <div>
+            <h4 class="daisy-orange">Meet Daisy!</h4>
+            <img src="assets/characters/daisy-3d.png" />
+            <aside>
+              <p>
+                Princess Daisy, known for her vibrant orange and yellow attire,
+                is a spirited and energetic royal of Sarasaland.
+              </p>
+              <p>
+                She's a fearless and competitive character who enjoys sports,
+                racing, and adventures alongside Mario and Luigi.
+              </p>
+              <p>
+                With her confident and daring personality, Daisy adds a distinct
+                flavor to the Super Mario series.
+              </p>
+            </aside>
+          </div>
+          <div>
+            <h4 class="toad-blue">Meet Toad!</h4>
+            <img src="assets/characters/toad-3d.png" />
+            <aside>
+              <p>
+                Toad, the loyal and courageous mushroom retainer, is a prominent
+                character in the Super Mario series.
+              </p>
+              <p>
+                With his distinctive mushroom cap and friendly demeanor, Toad
+                frequently aids Mario and his friends in their quests.
+              </p>
+              <p>
+                He's known for his speedy and resourceful nature, making him a
+                valuable asset to the Mushroom Kingdom.
+              </p>
+            </aside>
+          </div>
+          <div>
+            <h4 class="yoshi-green">Meet Yoshi!</h4>
+            <img src="assets/characters/yoshi-3d.webp" />
+            <aside>
+              <p>
+                Yoshi, the lovable dinosaur, is an iconic character who comes in
+                many colours.
+              </p>
+              <p>
+                With his unique abilities, including swallowing enemies and
+                flutter jumping, Yoshi has been a valuable companion to Mario on
+                many adventures.
+              </p>
+              <p>
+                His friendly and colorful appearance, along with his playful
+                nature, has made him a beloved character among Mario fans.
+              </p>
+            </aside>
+          </div>
+          <div>
+            <h4 class="waluigi-purple">Meet Waluigi!</h4>
+            <img src="assets/characters/waluigi-3d.png" />
+            <aside>
+              <p>
+                Waluigi, often portrayed as an antagonist, is a rival to Mario
+                and a mischievous character in the Super Mario universe.
+              </p>
+              <p>
+                His lanky appearance and signature purple attire make him stand
+                out among the characters.
+              </p>
+              <p>He is Luigi's cousin and has a similar appearance to him.</p>
+            </aside>
+          </div>
+          <div>
+            <h4 class="rosalina-blue">Meet Rosalina!</h4>
+            <img src="assets/characters/rosalina-3d.png" />
+            <aside>
+              <p>
+                Rosalina is a serene and calm motherly figure in the Super Mario
+                series, known for her association with the cosmos.
+              </p>
+              <p>
+                She is often seen with her Lumas, star-like creatures that
+                accompany her on her celestial adventures.
+              </p>
+              <p>
+                Rosalina plays a pivotal role in games like Super Mario Galaxy,
+                where she aids Mario in his spacefaring quests.
+              </p>
+            </aside>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="power-ups">
+      <h2>Power-ups</h2>
+
+      <div class="swiper power-swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="card medium">
+              <h3>Super Mushroom</h3>
+              <img
+                src="assets/power-ups/super-shroom.png"
+                alt="Super Mushroom"
+              />
+              <p>
+                The Super Mushroom makes Mario grow larger, allowing him to
+                smash through bricks and take an extra hit from enemies.
+              </p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card medium">
+              <h3>Fire Flower</h3>
+              <img src="assets/power-ups/fire-flower.png" alt="Fire Flower" />
+              <p>
+                The Fire Flower grants Mario the ability to shoot fireballs and
+                burn enemies.
+              </p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card medium">
+              <h3>Ice Flower</h3>
+              <img src="assets/power-ups/ice-flower.png" alt="Ice Flower" />
+              <p>
+                The Ice Flower grants Mario the ability shoot iceballs and
+                freeze enemies into solid blocks that can be used as platforms
+                or to eliminate other threats.
+              </p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card medium">
+              <h3>1-Up Mushroom</h3>
+              <img src="assets/power-ups/1-up.png" alt="1-Up Mushroom" />
+              <p>
+                The 1-Up Mushroom grants Mario an extra life, which can be a
+                lifesaver when facing tough challenges.
+              </p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card medium">
+              <h3>Propeller Mushroom</h3>
+              <img
+                src="assets/power-ups/propeller-mushroom.png"
+                alt="Propeller Mushroom"
+              />
+              <p>
+                The Propeller Mushroom grants Mario the ability to soar through
+                the air. By spinning the propeller on his head, Mario can reach
+                high places and access secret areas.
+              </p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card medium">
+              <h3>Tanooki Leaf</h3>
+              <img src="assets/power-ups/tanooki-leaf.png" alt="Tanooki Leaf" />
+              <p>
+                The Tanooki Leaf is a special power-up that transforms Mario
+                into a Tanooki, a Japanese raccoon dog.
+              </p>
+              <p>
+                It grants the ability to glide gracefully through the air and
+                turn into a statue, making him temporarily invulnerable to
+                enemies.
+              </p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card medium">
+              <h3>Mega Mushroom</h3>
+              <img
+                src="assets/power-ups/mega-mushroom.png"
+                alt="Mega Mushroom"
+              />
+              <p>
+                The Mega Mushroom is a super-sized power-up that turns Mario
+                into a colossal giant, towering over enemies and obstacles.
+              </p>
+              <p>
+                Mega Mario can smash through blocks, pipes, and just about
+                anything else in his path with immense power.
+              </p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card medium">
+              <h3>Super Bell</h3>
+              <img src="assets/power-ups/super-bell.png" alt="Super Bell" />
+              <p>
+                The Super Bell transforms Mario into a cat that grants him
+                abilities of climbing walls, scratching enemies with his claws,
+                and performing a pounce attack.
+              </p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card medium">
+              <h3>Boomerang Flower</h3>
+              <img
+                src="assets/power-ups/boomerang.png"
+                alt="Boomerang Flower"
+              />
+              <p>
+                The Boomerang Flower grants Mario the ability to throw
+                boomerangs.
+              </p>
+              <p>
+                These boomerangs not only allow him to attack enemies from a
+                distance but also return to him, making it possible to hit
+                multiple foes in one throw.
+              </p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card medium">
+              <h3>Penguin Suit</h3>
+              <img src="assets/power-ups/penguin.png" alt="Penguin Suit" />
+              <p>
+                The Penguin Suit transforms Mario into an adorable penguin. With
+                it, he can slide on ice, swim gracefully in water, and shoot ice
+                balls to freeze enemies.
+              </p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card medium">
+              <h3>Golden Flower</h3>
+              <img
+                src="assets/power-ups/golden-flower.png"
+                alt="Golden Flower"
+              />
+              <p>
+                The Golden Flower is a rare power-up that grants Mario the
+                ability to throw golden fireballs. These fireballs turn bricks
+                into coins, allowing Mario to accumulate wealth as he
+                progresses.
+              </p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card medium">
+              <h3>Super Star</h3>
+              <img src="assets/power-ups/super-star.png" alt="Super Star" />
+              <p>
+                The Super Star is a rare power-up that grants Mario temporary
+                invincibility and a vibrant, flashing appearance.
+              </p>
+              <p>
+                During this state, he can defeat enemies on contact without
+                taking damage, making it an invaluable tool for challenging
+                levels and tough foes.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+
+      <!-- <div class="card">
+        <img
+          src="https://oyster.ignimgs.com/mediawiki/apis.ign.com/new-super-mario-bros-u/2/23/Starman.jpg"
+          alt="Super Mushroom"
+        />
+        <p>The Super Mushroom makes Mario grow larger.</p>
+      </div> -->
+      <!-- Add more power-up cards here -->
+    </section>
+
+    <div class="separator aqua-mint"></div>
+
+    <section id="enemies">
+      <h2>Enemies</h2>
+
+      <div class="swiper enemy-swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="card large">
+              <h3>Goomba</h3>
+              <img src="assets/enemies/goomba.png" alt="Goomba" />
+              <p>
+                Goombas are common enemies in Super Mario. They resemble small
+                brown mushrooms with two feet and no visible arms or legs.
+              </p>
+              <p>
+                Goombas are physically weak and are not much of a threat to
+                Mario or Luigi, since a single stomp usually defeats them
+              </p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card large">
+              <h3>Koopa Troopa</h3>
+              <img src="assets/enemies/koopa.png" alt="Koopa Troopa" />
+              <p>
+                Koopa Troopas resemble turtles with green and red shells, some
+                having wings. They are the minions of Bowser.
+              </p>
+              <p>
+                Koopa Troopas have a unique trait - they retreat into their
+                shells when attacked. This can make them tricky to handle,
+                requiring Mario to jump on them strategically.
+              </p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card large">
+              <h3>Hammer Bro</h3>
+              <img src="assets/enemies/hammer-bro.png" alt="Hammer Bro" />
+              <p>
+                Hammer Bros are notorious for their relentless hammer-throwing
+                antics which deal deadly damage.
+              </p>
+              <p>
+                They continuously toss hammers from platforms or ledges, making
+                it difficult for Mario to approach them. Precise timing and
+                agility are essential to overcome these foes.
+              </p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card large">
+              <h3>Piranha Plant</h3>
+              <img src="assets/enemies/piranha-plant.png" alt="Piranha Plant" />
+              <p>
+                Piranha Plants are iconic, carnivorous foes that inhabit pipes
+                throughout the Mushroom Kingdom.
+              </p>
+              <p>
+                These menacing plants emerge from their pipes when Mario
+                approaches, snapping at anything in their path. Often they can
+                spew fire balls out at anything near them.
+              </p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card large">
+              <h3>Boo</h3>
+              <img src="assets/enemies/boo.png" alt="Boo" />
+              <p>
+                Boos are mischievous ghosts haunting mansions and castles. They
+                are known for their shy and timid nature, often covering their
+                faces when approached.
+              </p>
+              <p>
+                When someone looks away they pursue with relentless
+                determination, and it's said that the only way to stop them is
+                to face them head-on.
+              </p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card large">
+              <h3>Koopalings</h3>
+              <img src="assets/enemies/koopaling.png" alt="Koopaling" />
+              <p>
+                Koopalings are a group of seven troublemaking Koopas, each with
+                a distinct personality for causing chaos, led by Bowser Jr.
+              </p>
+              <p>
+                From the clever Ludwig von Koopa to the mischievous Lemmy, and
+                the fiery Morton Jr, they are known for having various tough
+                abilities to deal with.
+              </p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card large">
+              <h3>Thwomp</h3>
+              <img src="assets/enemies/thwomp.png" alt="Thwomp" />
+              <p>
+                Thwomps are massive stone blocks with menacing faces that hang
+                in the air. These relentless Thwomps are known for their
+                persistence and present a formidable obstacle for Mario.
+              </p>
+              <p>
+                When triggered, these heavyweights crash down with unrelenting
+                force, attempting to flatten anything in their path. Only the
+                quickest and most agile can get past them.
+              </p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card large">
+              <h3>Bullet Bill</h3>
+              <img src="assets/enemies/bullet-bill.png" alt="Bullet Bill" />
+              <p>
+                Bullet Bills are living projectiles that have become one of
+                Mario's most recognizable foes. These high-speed, airborne
+                menaces are missiles that won't stop until they hit their
+                target.
+              </p>
+              <p>
+                They often have a warning sound before their entrance, provide
+                opportunities for Mario to show off his incredible agility as he
+                dodges and outmaneuvers them to continue his adventures.
+              </p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card large">
+              <h3>Dry Bones</h3>
+              <img src="assets/enemies/dry-bones.png" alt="Dry Bones" />
+              <p>
+                Dry Bones are skeletal Koopas that haunt abandoned hallways. Dry
+                Bones are undeterred by ordinary stomps and often crumble into
+                pieces when defeated but only to reassemble and continue
+                pursuit.
+              </p>
+              <p>
+                Dry Bones provide an extra layer of challenge which requires
+                creative ways to deal with them, whether through special power
+                ups or precise platforming.
+              </p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card large">
+              <h3>Bowser</h3>
+              <img src="assets/enemies/bowser.png" alt="Bowser" />
+              <p>
+                Bowser, the ultimate final boss, is a giant, fire-breathing
+                turtle wreaking havoc. He often captures Princess Peach and has
+                an epic showdown with Mario.
+              </p>
+              <p>
+                Bowser is very intelligent and commands a legion of loyal
+                minions, including Koopa Troopas, Goombas, and others. He can
+                only be defeated after a long war with his army...
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+        <div class="swiper-scrollbar"></div>
+      </div>
+      <div class="btn hash-pattern">
+        <span>Scroll Through!</span>
+      </div>
+    </section>
+
+    <section id="mario-background">
+      <h2>Classic Mario Games</h2>
+      <div class="mario-container">
+        <div class="game-grid">
+          <div class="game-card hash-pattern">
+            <img
+              src="https://fs-prod-cdn.nintendo-europe.com/media/images/10_share_images/games_15/nintendo_switch_4/2x1_NSwitch_SuperMarioBrosWonder.jpg"
+              alt="Mario Wonder"
+            />
+            <div class="game-text">
+              <h3>Super Mario Bros. Wonder</h3>
+              <p>
+                Join Mario and friends in an adventure full of wonder in the
+                Flower Kingdom.
+              </p>
+            </div>
+          </div>
+          <div class="game-card hash-pattern">
+            <img
+              src="https://fs-prod-cdn.nintendo-europe.com/media/images/10_share_images/games_15/nintendo_switch_4/H2x1_NSwitch_SuperMario3DWorldAndBowsersFury_image1600w.jpg"
+              alt="Mario 3D World"
+            />
+            <div class="game-text">
+              <h3>Super Mario 3D World + Bowser's Fury</h3>
+              <p>
+                Join Mario and friends in a 3D World to rescue the Sprixie
+                Princess.
+              </p>
+            </div>
+          </div>
+          <div class="game-card hash-pattern">
+            <img
+              src="https://fs-prod-cdn.nintendo-europe.com/media/images/10_share_images/games_15/nintendo_switch_4/H2x1_NSwitch_MarioKart8Deluxe_image1600w.jpg"
+              alt="Mario Kart"
+            />
+            <div class="game-text">
+              <h3>Mario Kart 8 Deluxe</h3>
+              <p>
+                Race and compete with friends online across various tracks,
+                anywhere and anytime.
+              </p>
+            </div>
+          </div>
+          <div class="game-card hash-pattern">
+            <img
+              src="https://fs-prod-cdn.nintendo-europe.com/media/images/10_share_images/games_15/nintendo_switch_4/H2x1_NSwitch_MarioPartySuperStars.jpg"
+              alt="Mario Party"
+            />
+            <div class="game-text">
+              <h3>Mario Party Superstars</h3>
+              <p>
+                Set out to become a superstar in a fun packed boards where
+                fortunes can change in the blink of an eye.
+              </p>
+            </div>
+          </div>
+        </div>
+        <img
+          src="https://mario.wiki.gallery/images/thumb/0/0c/SMO_Cap_Throw.png/1200px-SMO_Cap_Throw.png"
+          alt="Mario Background"
+          id="mario-image"
+        />
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+    <script src="https://www.youtube.com/iframe_api"></script>
+
+    <div class="extender"></div>
+
+    <footer>
+      <div class="socials">
+        <p>Connect with us!</p>
+        <i class="fa-brands fa-square-facebook"></i>
+        <i class="fa-brands fa-square-instagram"></i>
+        <i class="fa-brands fa-square-twitter"></i>
+        <i class="fa-brands fa-square-youtube"></i>
+      </div>
+      <p>&copy; 2023 The Mario Site</p>
+    </footer>
+  </body>
+</html>
