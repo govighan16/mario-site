@@ -618,6 +618,15 @@ footer {
   .menu-icon {
     display: block;
   }
+
+  #explore-button {
+    font-size: 16px;
+    padding: 7px 25px;
+  }
+
+  #explore-button i {
+    font-size: 60%;
+  }
 }
 
 @media (max-width: 763px) {
@@ -685,11 +694,6 @@ footer {
 }
 
 @media screen and (max-width: 485px) {
-  header {
-    position: relative;
-    right: 20px;
-  }
-
   nav h1 {
     font-size: 1.7rem;
   }
@@ -702,16 +706,10 @@ footer {
     max-width: 60px;
     padding: 10px;
   }
-  */ #explore-button {
-    font-size: 10px;
-    padding: 10px 10px;
-    position: absolute;
-    bottom: 100px;
-  }
 
-  #characters h2 {
-    position: relative;
-    right: 25px;
+  #explore-button {
+    font-size: 13px;
+    padding: 5px 25px;
   }
 
   .tab-content h4 {
